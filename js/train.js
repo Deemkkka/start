@@ -3,19 +3,37 @@ const fruits = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
 // Создать массив который содержит только уникальные значения исходного массива.
 
 
+// const removeDoublicates = (list) => {
 
-const removeDoublicates = (arr) => {
-    const map = {};
+//     const newArrayWithoutDouble = {};
 
-    return arr.reduce((acc, cur) => {
-        if(!map[cur]){
-            map[cur] = true;
-            acc.push(cur);
+//     return list.reduce((acc, cur) => {
+//         if(!newArrayWithoutDouble[cur]){
+//             newArrayWithoutDouble[cur] = true;
+//             acc.push(cur);
+//         }
+
+//         return acc;
+//     }, []); 
+
+// };
+
+// const result = removeDoublicates(fruits);
+// console.log(result);
+
+const removeDoubleWithForeach = (list) => {
+    const arrayNew = {};
+
+    list.forEach((el) => {
+        if(!arrayNew[el]){
+            arrayNew[el] = true;
         }
+    });
 
-        return acc;
-    }, [])
+    const res = Object.keys(arrayNew);
+    return res
 };
 
-const fruitsUnique = removeDoublicates(fruits);
-console.log(fruitsUnique);
+const result2 = removeDoubleWithForeach(fruits);
+
+console.log(result2);

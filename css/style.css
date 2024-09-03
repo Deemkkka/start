@@ -76,6 +76,12 @@ a{
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    transition: all .5s;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #5A0D67;
 }
 
 .header__social{
@@ -94,5 +100,64 @@ a{
     bottom: -250px;
 }
 
+.services{
+    padding-top: 350px;
+}
 
-/* 1 01-35 */
+.title{
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #21062A;
+    position: relative;
+}
+
+.title::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #21062A;
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+}
+
+.services__inner{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.services__content{
+    flex-basis: 505px;
+    margin-right: 96px;
+}
+
+.services__content-box{
+    /* margin-bottom: 55px; */
+}
+
+.services__content-title{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #5A0D67;
+    margin-bottom: 12px;
+}
+
+.services__content-textbox{
+    margin-bottom: 55px;
+}
+
+.services__content-text{
+    margin-bottom: 12px;
+}
+
+.button--decor{
+    margin-top: -7px;
+    color: #fff;
+    border: solid 1px #5A0D67;
+}
+
+
+/* 1 02-31 */
